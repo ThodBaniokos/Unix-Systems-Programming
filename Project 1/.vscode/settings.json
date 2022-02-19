@@ -1,0 +1,32 @@
+{
+	"project": {
+		// Directory where the executable is located
+		"dir": "./",
+
+		// Name of executable
+		"program": "vaccineMonitor",
+
+		// Program's arguments
+		// Use "< inputFile", for input file
+		// Use "> outputFile", for output file
+		//
+		// Use "#" in one of the arguments to ignore this and all the ones following
+		"arg1": "-c",
+		"arg2": "./input/citizenRecordsFile.txt",
+		"arg3": "-b",
+		"arg4": "1024",
+		"arg5": "#",
+		"arg6": "",
+	},
+	"files.associations": {
+		"blmintr.h": "c",
+		"hashfunctions.h": "c",
+		"skiplistintr.h": "c",
+		"commonintr.h": "c",
+		"linkedlistintr.h": "c",
+		"personintr.h": "c",
+		"types.h": "c",
+		"hashtableintr.h": "c",
+		"ioapiintr.h": "c"
+	},
+}

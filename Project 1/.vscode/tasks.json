@@ -1,0 +1,52 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build <program> with make",
+			"type": "shell",
+			"command": "make",
+			"options": {
+				"cwd": "${workspaceRoot}/${config:project.dir}"
+			},
+			"args": [
+				"${config:project.program}"
+			],
+			"group": "build",
+			"presentation": {
+				"clear": true
+			},
+			"problemMatcher": {
+				"base": "$gcc",
+				"fileLocation": [
+					"relative",
+					"${workspaceRoot}/${config:project.dir}"
+				]
+			}
+		},
+		{
+			"label": "Execute <program> (after building it)",
+			"type": "shell",
+			"command": "./${config:project.program}",
+			"args": [
+				"${config:project.arg1}",
+				"${config:project.arg2}",
+				"${config:project.arg3}",
+				"${config:project.arg4}",
+				"${config:project.arg5}",
+				"${config:project.arg6}",
+			],
+			"options": {
+				"cwd": "${workspaceRoot}/${config:project.dir}"
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"presentation": {
+				"clear": true
+			},
+			"dependsOn": "Build <program> with make",
+			"problemMatcher": []
+		},
+	]
+}

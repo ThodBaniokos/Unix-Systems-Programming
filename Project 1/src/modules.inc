@@ -1,0 +1,11 @@
+OBJS += $(MDLS)/list/linkedList.o
+OBJS += $(MDLS)/ht/hashTable.o
+OBJS += $(MDLS)/common/common.o
+OBJS += $(MDLS)/blm/blm.o
+OBJS += $(MDLS)/hash_functions/hashFunctions.o
+OBJS += $(MDLS)/skip/skipList.o
+OBJS += $(MDLS)/person/person.o
+OBJS += $(MDLS)/ioAPI/commands.o
+OBJS += $(MDLS)/ioAPI/ioAPI.o
+OBJS += $(MDLS)/ioAPI/utils.o
+OBJS += $(MDLS)/helpers/vaccineMonitorHelpers.o
